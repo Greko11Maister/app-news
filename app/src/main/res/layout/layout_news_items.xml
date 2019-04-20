@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="16dp"
+                                    android:clickable="true"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    card_view:cardBackgroundColor="#E2E2E2"
+                                    card_view:cardCornerRadius="4dp"
+                                    android:focusable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:id="@+id/cardViewArticle"
+
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+                android:id="@+id/ImageViewArticle"
+                android:layout_width="match_parent"
+                   android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/btn_star"
+        />
+
+        <TextView
+                android:id="@+id/TextViewTitle"
+                tools:text="Titulo de Noticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textStyle="bold" android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/TextViewDescription"
+                tools:text="Descripcion de Noticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="12sp" android:textStyle="italic"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/btnCompartir"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorAccent"
+                    android:text="Compartir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/btnVerNoticia"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorAccent"
+                    android:text="Ver Noticia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
